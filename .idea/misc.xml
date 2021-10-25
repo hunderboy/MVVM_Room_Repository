@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LEE SEONGHUN/AndroidStudioProjects/ddangeun/MVVM_Room_Repository/app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="..\:/Users/LEE SEONGHUN/AndroidStudioProjects/ddangeun/MVVM_Room_Repository/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/LEE SEONGHUN/AndroidStudioProjects/ddangeun/MVVM_Room_Repository/app/src/main/res/layout/recycler_item.xml" value="0.3453703703703704" />
       </map>
     </option>
   </component>
