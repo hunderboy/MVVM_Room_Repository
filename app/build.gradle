@@ -60,7 +60,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$roomVersion"
     annotationProcessor "androidx.room:room-compiler:$roomVersion"
 //    kapt "androidx.room:room-compiler:$roomVersion"
-     ksp("androidx.room:room-compiler:$roomVersion") // 현재 Beta stage
+     ksp("androidx.room:room-compiler:$roomVersion") // 현재 Beta stage. kapt 대신 ksp 사용
 
     // Room 에 대한 Kotlin Extensions 과 코루틴 지원
     implementation "androidx.room:room-ktx:$roomVersion"

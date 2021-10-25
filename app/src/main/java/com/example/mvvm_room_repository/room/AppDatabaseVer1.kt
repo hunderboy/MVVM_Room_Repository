@@ -24,7 +24,7 @@ import kotlinx.coroutines.launch
     // true로 하면 Room의 schema를 json파일로 생성할 수 있습니다.
     exportSchema = false
 )
-abstract class AppDatabase : RoomDatabase() {
+abstract class AppDatabaseVer1 : RoomDatabase() {
 
     // UserEntity에 접근 명세를 가진 UserDao 추상 함수 선언
     abstract fun userDao(): UserDao
@@ -32,18 +32,18 @@ abstract class AppDatabase : RoomDatabase() {
     companion object {
 
         @Volatile
-        private var INSTANCE: AppDatabase? = null
+        private var INSTANCE: AppDatabaseVer1? = null
 
         fun getDatabase(
             context: Context,
             scope: CoroutineScope
-        ): AppDatabase {
+        ): AppDatabaseVer1 {
             // if the INSTANCE is not null, then return it,
             // if it is, then create the database
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    AppDatabase::class.java,
+                    AppDatabaseVer1::class.java,
                     "app_database"
                 )
                     // RoomDatabaseCallback을 만들어 onCreate()을 override 하여
