@@ -1,4 +1,4 @@
-package com.example.mvvm_room_repository.room
+package com.example.mvvm_room_repository.room.entity
 
 import androidx.room.Entity
 import androidx.room.Fts4

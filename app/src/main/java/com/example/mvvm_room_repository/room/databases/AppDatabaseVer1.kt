@@ -1,10 +1,12 @@
-package com.example.mvvm_room_repository.room
+package com.example.mvvm_room_repository.room.databases
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.example.mvvm_room_repository.room.entity.UserEntity
+import com.example.mvvm_room_repository.room.dao.UserDao
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 

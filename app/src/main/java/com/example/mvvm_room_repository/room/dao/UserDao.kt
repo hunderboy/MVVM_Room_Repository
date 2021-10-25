@@ -1,7 +1,8 @@
-package com.example.mvvm_room_repository.room
+package com.example.mvvm_room_repository.room.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.mvvm_room_repository.room.entity.UserEntity
 
 @Dao
 interface UserDao {
