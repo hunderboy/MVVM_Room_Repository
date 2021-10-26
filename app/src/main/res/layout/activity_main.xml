@@ -18,8 +18,7 @@
             android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.main_text}"
-            android:onClick="@{()->viewModel.onClickButton()}"/>
+            android:text="@{viewModel.main_text}" />
 
 
         <androidx.recyclerview.widget.RecyclerView

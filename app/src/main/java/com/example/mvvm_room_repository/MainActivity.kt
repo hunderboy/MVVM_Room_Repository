@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
             // Update the cached copy of the users in the adapter.
             users?.let { mAdapter.setUsers(it) }
         })
+
+        binding.btnAdd.setOnClickListener {
+            val dlg = UserDialog(this)
+            dlg.show()
+        }
     }
 
 
