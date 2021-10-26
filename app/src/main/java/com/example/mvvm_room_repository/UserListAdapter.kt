@@ -1,5 +1,6 @@
 package com.example.mvvm_room_repository
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +37,7 @@ class UserListAdapter (
         holder.userBirth.text = current.birth
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     internal fun setUsers(users: List<UserEntity>) {
         this.users = users
         notifyDataSetChanged()

@@ -29,8 +29,11 @@ class UserDialog(mContext: Context) : Dialog(mContext) {
         binding.buttonSave.setOnClickListener {
             // '확인' 버튼 클릭시 data insert
             viewModel.insert(
-                UserEntity(binding.userName.text.toString(),
-                    binding.userGender.text.toString(),binding.userBirth.text.toString())
+                UserEntity(
+                    binding.userName.text.toString(),   // 이름
+                    binding.userGender.text.toString(), // 성별
+                    binding.userBirth.text.toString()   // 나이
+                )
             )
             // Custom Dialog 종료
             dismiss()

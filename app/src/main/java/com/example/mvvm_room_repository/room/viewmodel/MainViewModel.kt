@@ -33,9 +33,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val main_text: LiveData<String> get() = _main_text
 
     val repository: Repository =  Repository(AppDatabaseVer1.getDatabase(application,viewModelScope))
-    var allUsers: LiveData<List<UserEntity>> = repository.allUsers
+    var allUsers: LiveData<List<UserEntity>> = repository.allUsers  // repository 의 allUsers 적용
 
-    // 데이터 추가
+    // 데이터 추가 함수 실행 = 람다 코루틴
     fun insert(userEntity: UserEntity) = viewModelScope.launch(Dispatchers.IO) {
         repository.insert(userEntity)
     }

@@ -49,8 +49,8 @@ dependencies {
 
     // Kotlin components
     def coroutines = '1.5.2'        // 코루틴 버전
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
 
     // Coroutine
     def kotlin_version = "1.5.30"   // 코틀린 버전
