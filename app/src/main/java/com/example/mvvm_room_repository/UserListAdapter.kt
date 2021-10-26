@@ -8,8 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvm_room_repository.room.entity.UserEntity
 
-class UserListAdapter internal constructor(context: Context)
-    : RecyclerView.Adapter<UserListAdapter.UserViewHolder>() {
+/**
+ * User List를 띄울 Recycler View의 adpater를 만들어 줍니다.
+ */
+class UserListAdapter (
+    context: Context
+) : RecyclerView.Adapter<UserListAdapter.UserViewHolder>() {
 
     private val inflater: LayoutInflater = LayoutInflater.from(context)
     private var users = emptyList<UserEntity>() // Cached copy of words

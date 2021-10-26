@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
+        // 리사이클러뷰 어댑터 선언
         val mAdapter = UserListAdapter(this)
         binding.recyclerview.apply {
             adapter = mAdapter
